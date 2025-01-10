@@ -49,6 +49,19 @@ Create a MySQL database and import the required schema:
 
 CREATE DATABASE online_shopping;
 USE online_shopping;
++------------------------------+
+| Tables_in_onlineshoppingmang |
++------------------------------+
+| bill                         |
+| cart                         |
+| order_items                  |
+| orders                       |
+| payment                      |
+| product                      |
+| product_category             |
+| stock                        |
+| user                         |
++------------------------------+
 
 
 Update database credentials in the project configuration file (e.g., src/main/resources/database.properties):
@@ -57,17 +70,7 @@ db.url=jdbc:mysql://localhost:3306/online_shopping
 db.username=your_username
 db.password=your_password
 
-3. Build the Project
 
-Run the following Maven command to build the project and package it into a JAR file:
-
-mvn clean package
-
-4. Run the Application
-
-Navigate to the target directory and execute the JAR file:
-
-java -jar target/online-shopping-management-1.0-SNAPSHOT.jar
 
 📁 Project Structure
 
@@ -84,9 +87,6 @@ OnlineShopping/
 
 Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request. Please ensure your changes are well-documented and follow the project’s coding standards.
 
-📅 License
-
-This project is licensed under the MIT License.
 
 📧 Contact
 
